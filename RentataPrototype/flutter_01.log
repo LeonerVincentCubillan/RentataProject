@@ -1,0 +1,68 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --target lib\main.dart -d DRGGAM5932503439 --track-widget-creation --dart-define=flutter.inspector.structuredErrors=true --start-paused --web-server-debug-protocol ws --web-allow-expose-url
+
+## exception
+
+ArgumentError: Invalid argument(s): Cannot find executable for C:\Users\User\Downloads\RentataPrototype\RentataPrototype\android\gradlew.bat.
+
+```
+#0      _getExecutable (package:process/src/interface/local_process_manager.dart:127:5)
+#1      LocalProcessManager.start (package:process/src/interface/local_process_manager.dart:43:30)
+#2      _DefaultProcessUtils.start (package:flutter_tools/src/base/process.dart:466:28)
+#3      _DefaultProcessUtils.stream (package:flutter_tools/src/base/process.dart:484:35)
+#4      buildGradleApp (package:flutter_tools/src/android/gradle.dart:388:35)
+#5      _AndroidBuilderImpl.buildApk (package:flutter_tools/src/android/android_builder.dart:103:13)
+#6      AndroidDevice.startApp (package:flutter_tools/src/android/android_device.dart:587:28)
+#7      _rootRunUnary (dart:async/zone.dart:1198:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#9      _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#10     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#11     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#12     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#13     Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:567:7)
+#14     _rootRun (dart:async/zone.dart:1190:13)
+#15     _CustomZone.run (dart:async/zone.dart:1093:19)
+#16     _CustomZone.runGuarded (dart:async/zone.dart:997:7)
+#17     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1037:23)
+#18     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#19     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#20     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#21     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 1.20.4, on Microsoft Windows [Version 10.0.19041.746], locale en-PH)
+    • Flutter version 1.20.4 at D:\flutter
+    • Framework revision fba99f6cf9 (4 months ago), 2020-09-14 15:32:52 -0700
+    • Engine revision d1bc06f032
+    • Dart version 2.9.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+    • Android SDK at C:\Users\User\AppData\Local\Android\sdk
+    • Platform android-29, build-tools 29.0.2
+    • ANDROID_HOME = C:\Users\User\AppData\Local\Android
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 49.0.2
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] VS Code (version 1.49.3)
+    • VS Code at C:\Users\User\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.16.0
+
+[✓] Connected device (1 available)
+    • Nokia 6 1 Plus (mobile) • DRGGAM5932503439 • android-arm64 • Android 10 (API 29)
+
+• No issues found!
+```
